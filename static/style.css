@@ -1,0 +1,79 @@
+.jumbotron{
+    background-color: orange;
+}
+.original_title{
+    background-color: orangered;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+.summary_title{
+    background-color: greenyellow;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+/* .srt{
+    display: flex;
+    flex-direction: row;
+}
+.originalTxt{
+    background-color: orangered;
+    padding: 20px;
+}
+.summaryTxt{
+    background-color: greenyellow;
+    padding: 20px;
+    margin-left: 10px;
+} */
+.heading{
+    margin-top: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.lead{
+    display: flex;
+    justify-content: center;
+}
+.submitBtn{
+    margin-top: 10px;
+}
+
+.srt {
+    display: flex; /* Use flexbox for side-by-side layout */
+    gap: 10px; /* Space between Original and Summary sections */
+    align-items: flex-start; /* Align items at the top */
+}
+
+.originalContainer,
+.summaryContainer {
+    flex: 1; /* Ensure equal width */
+    display: flex; /* Use flexbox to organize text and button */
+    flex-direction: column; /* Stack the text box and button vertically */
+    gap: 10px; /* Space between text and button */
+}
+
+.originalTxt,
+.summaryTxt {
+    padding: 20px; /* Inner spacing */
+    /* box-sizing: border-box; /* Include padding in width calculations */
+    /* overflow-wrap: break-word; Handle long text */
+    /* border: 1px solid black; Optional: For debugging layout */
+    /* border-radius: 5px; Optional: Rounded corners for better visuals */  
+    background-color: orangered; /* Default for Original Text */
+    /* min-height: 100px; Optional: Set a minimum height */
+}
+
+.summaryTxt {
+    background-color: greenyellow; /* Different color for Summary */
+}
+
+button {
+    align-self: flex-start; /* Align buttons to the left edge */
+    margin: 0; /* Reset any margins to prevent unexpected spacing */
+}
