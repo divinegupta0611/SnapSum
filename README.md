@@ -1,0 +1,2 @@
+# SnapSum
+A summary Generator
